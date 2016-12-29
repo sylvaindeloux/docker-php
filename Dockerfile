@@ -16,6 +16,7 @@ RUN curl -s https://getcomposer.org/installer | php && \
     mv composer /usr/bin
 
 RUN docker-php-ext-install intl
+RUN docker-php-ext-install ftp
 RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install opcache
 RUN docker-php-ext-install mcrypt
