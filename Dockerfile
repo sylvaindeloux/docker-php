@@ -6,7 +6,7 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_PROCESS_TIMEOUT 300
 
 RUN apt-get update && \
-    apt-get install -y git wget zip unzip libicu-dev libmcrypt-dev libcurl3-dev zlib1g-dev libssl-dev && \
+    apt-get install -y git wget zip unzip libicu-dev libmcrypt-dev libcurl3-dev zlib1g-dev libssl-dev cron && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
