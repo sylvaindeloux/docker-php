@@ -23,6 +23,7 @@ RUN docker-php-ext-install mcrypt
 RUN docker-php-ext-install curl
 RUN docker-php-ext-install zip
 RUN docker-php-ext-install exif
+RUN docker-php-ext-install pcntl
 
 RUN pecl install imagick && \
     docker-php-ext-enable imagick && \
