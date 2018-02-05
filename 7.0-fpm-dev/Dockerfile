@@ -30,6 +30,11 @@ RUN pecl install imagick && \
     pecl clear-cache && \
     rm -rf /tmp/*
 
+RUN pecl install mongodb && \
+    docker-php-ext-enable mongodb && \
+    pecl clear-cache && \
+    rm -rf /tmp/*
+
 
 # Composer
 
