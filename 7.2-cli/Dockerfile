@@ -16,6 +16,7 @@ RUN apt-get update && \
 # PHP exensions
 
 RUN docker-php-ext-install intl
+RUN docker-php-ext-install gd
 RUN docker-php-ext-install ftp
 RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install opcache
