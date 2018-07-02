@@ -36,6 +36,11 @@ RUN pecl install mongodb && \
     pecl clear-cache && \
     rm -rf /tmp/*
 
+RUN pecl install apcu-4.0.11 && \
+    docker-php-ext-enable apcu && \
+    pecl clear-cache && \
+    rm -rf /tmp/*
+
 
 # Composer
 
