@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Packages
 
 RUN apt-get update && \
-    apt-get install -y git wget zip unzip libicu-dev libmcrypt-dev libcurl3-dev zlib1g-dev libssl-dev libmagickwand-dev jpegoptim && \
+    apt-get install -y git wget zip unzip libicu-dev libmcrypt-dev libcurl3-dev zlib1g-dev libssl-dev libmagickwand-dev jpegoptim libzip-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
